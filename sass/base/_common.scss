@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--second-text-color);
-    background-color: var(--first-background-color);
+    color: $second-text-color;
+    background-color: $first-background-color;
 }
 
 .list {

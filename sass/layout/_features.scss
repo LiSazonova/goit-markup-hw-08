@@ -12,7 +12,7 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: var(--first-text-color);
+        color: $first-text-color;
         margin-bottom: 10px;
     }
 
@@ -20,7 +20,7 @@
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-        color: var(--second-text-color);
+        color: $second-text-color;
         max-width: 270px;
     }
 }
@@ -47,7 +47,7 @@
     height: 120px;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--third-background-color);
+    background-color: $third-background-color;
     margin-bottom: 30px;
     border-radius: 4px;
 }

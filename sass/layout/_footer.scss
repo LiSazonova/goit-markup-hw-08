@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--forth-background-color);
+    background-color: $forth-background-color;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -31,7 +31,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--third-text-color);
+    color: $third-text-color;
 }
 
 .footer-address__mail,
@@ -40,11 +40,11 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    transition: color 250ms var(--timing-function);
+    transition: color 250ms $timing-function;
 
     &:hover,
     &:focus {
-        color: var(--first-accent-color);
+        color: $first-accent-color;
     }
 }
 
@@ -58,7 +58,7 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: var(--third-text-color);
+        color: $third-text-color;
     }
 
     &__list {
@@ -83,16 +83,16 @@
     border-radius: 50%;
     @extend %align-list;
     justify-content: center;
-    transition: background-color 250ms var(--timing-function);
+    transition: background-color 250ms $timing-function;
 
     &:hover,
     &:focus {
-        background-color: var(--first-accent-color);
+        background-color: $first-accent-color;
     }
 }
 
 .footer-soc__link .footer-soc__link:focus {
-    background-color: var(--first-accent-color);
+    background-color: $first-accent-color;
 }
 
 .footer-form {
@@ -104,7 +104,7 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: var(--third-text-color);
+        color: $third-text-color;
         margin-bottom: 20px;
     }
 }
@@ -130,7 +130,7 @@
 
     &:hover,
     &:focus {
-        border-color: var(--first-accent-color);
+        border-color: $first-accent-color;
     }
 
     &::placeholder {
@@ -148,11 +148,11 @@
     @extend %align-list;
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(--third-text-color);
+    color: $third-text-color;
     width: 200px;
     height: 50px;
     border: none;
-    background: var(--first-accent-color);
+    background: $first-accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding-left: 29px;
@@ -160,7 +160,7 @@
 
     &:hover,
     &:focus {
-        background-color: var(--second-accent-color);
+        background-color: $second-accent-color;
     }
 }
 

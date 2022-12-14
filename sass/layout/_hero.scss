@@ -1,5 +1,5 @@
 .hero {
-    background-color: var(--second-background-color);
+    background-color: $second-background-color;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -22,14 +22,14 @@
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        color: var(--third-text-color);
+        color: $third-text-color;
         margin-bottom: 30px;
     }
 }
 
 .hero__btn {
     font-family: inherit;
-    background-color: var(--first-accent-color);
+    background-color: $first-accent-color;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -37,17 +37,17 @@
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(--third-text-color);
+    color: $third-text-color;
     min-width: 200px;
     height: 50px;
     border-radius: 4px;
     border: none;
-    transition: color 250ms var(--timing-function),
-        background-color 250ms var(--timing-function);
+    transition: color 250ms $timing-function,
+        background-color 250ms $timing-function;
 
     &:hover,
     &:focus {
-        color: var(--third-text-color);
-        background-color: var(--second-accent-color);
+        color: $third-text-color;
+        background-color: $second-accent-color;
     }
 }

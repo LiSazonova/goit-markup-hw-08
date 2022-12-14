@@ -1,13 +1,11 @@
-:root {
-    --first-accent-color: #2196F3;
-    --second-accent-color: #188CE8;
-    --first-background-color: #FFFFFF;
-    --second-background-color: #C4C4C4;
-    --third-background-color: #F5F4FA;
-    --forth-background-color: #2F303A;
-    --first-text-color: #212121;
-    --second-text-color: #757575;
-    --third-text-color: #FFFFFF;
-    --icon-color: #AFB1B8;
-    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+$first-accent-color: #2196F3;
+$second-accent-color: #188CE8;
+$first-background-color: #FFFFFF;
+$second-background-color: #C4C4C4;
+$third-background-color: #F5F4FA;
+$forth-background-color: #2F303A;
+$first-text-color: #212121;
+$second-text-color: #757575;
+$third-text-color: #FFFFFF;
+$icon-color: #AFB1B8;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
