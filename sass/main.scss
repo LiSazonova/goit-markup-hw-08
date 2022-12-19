@@ -1,6 +1,9 @@
 @import "./utils/variables";
 @import "./utils/visually-hidden";
 @import "./utils/placeholders";
+@import "./utils/breakpoints";
+@import "./utils/mixins";
+
 @import "./base/reset";
 @import "./base/common";
 
@@ -8,6 +11,8 @@
 @import "./components/modal";
 
 @import "./layout/header";
+@import "./layout/navigation";
+@import "./layout/connect";
 @import "./layout/hero";
 @import "./layout/features";
 @import "./layout/about";
@@ -15,3 +20,4 @@
 @import "./layout/clients";
 @import "./layout/footer";
 @import "./layout/portfolio";
+ 

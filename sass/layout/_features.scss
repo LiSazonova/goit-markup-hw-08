@@ -1,9 +1,16 @@
 .features {
-    padding-top: 94px;
-    padding-bottom: 47px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
     &__title {
@@ -14,6 +21,7 @@
         text-transform: uppercase;
         color: $first-text-color;
         margin-bottom: 10px;
+        text-align: center;
     }
 
     &__text {
@@ -21,7 +29,15 @@
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: $second-text-color;
-        max-width: 270px;
+        max-width: 450px;
+
+        @include tablet {
+            max-width: 354px;
+        }
+
+        @include desktop {
+            max-width: 270px;
+        }
     }
 }
 
@@ -52,6 +68,14 @@
     border-radius: 4px;
 }
 
-.features__item:not(:last-child) {
-    margin-right: 30px;
+.features__item {
+    width: 100%;
+
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+        width: calc((100% - 90px) / 4);
+    }
 }

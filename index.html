@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
 
 <body>
     <!--Header-->
-    <header class="header">
+    <!-- <header class="header">
         <div class="container header__container">
             <a href="" class="logo header__logo logo--dark link"><span class="logo-accent">Web</span>Studio</a>
             <nav class="nav">
@@ -46,45 +46,46 @@
                 </ul>
             </div>
         </div>
-    </header>
+    </header> -->
     <!--Main-->
     <main>
         <!--Баннер-->
         <section class="hero">
             <div class="container">
-                <h1 class="hero__title">Ефективні рішення<br>для вашого бізнесу</h1>
-                <button type="button" class="hero__btn" data-modal-open>Замовити послугу</button>
+                <h1 class="hero__title">Effective solutions<br>for your business</h1>
+                <button type="button" class="hero__btn" data-modal-open>Request our service</button>
             </div>
         </section>
         <!--Особенности-->
         <section class="features">
             <div class="container">
-                <h2 class="visually-hidden">Особливості</h2>
+                <h2 class="visually-hidden">Features</h2>
                 <ul class="features__list list">
                     <li class="features__item icon-antenna">
-                        <h3 class="features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                        <p class="features__text">Ідейні міркування, і навіть початок повсякденної роботи з формування
-                            позиції.</p>
+                        <h3 class="features__title">ATTENTION TO DETAILS</h3>
+                        <p class="features__text">We go into all the details and processes of your business to develop a
+                            customized solution..</p>
                     </li>
                     <li class="features__item icon-clock">
-                        <h3 class="features__title">ПУНКТУАЛЬНІСТЬ</h3>
-                        <p class="features__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у
-                            себе.</p>
+                        <h3 class="features__title">PUNCTUALITY</h3>
+                        <p class="features__text">With us, you can feel safe and secure. An important principle of the
+                            company: respect your time and deadlines.</p>
                     </li>
                     <li class="features__item icon-diagrama">
-                        <h3 class="features__title">ПЛАНУВАННЯ</h3>
-                        <p class="features__text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                        <h3 class="features__title">PLANNING</h3>
+                        <p class="features__text">You will be able to observe and participate in every phase of solution
+                            development and implementation.</p>
                     </li>
                     <li class="features__item icon-technology">
-                        <h3 class="features__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                        <p class="features__text">Значимість цих проблем настільки очевидна, що реалізація планових
-                            завдань.</p>
+                        <h3 class="features__title">MODERN TECHNOLOGIES</h3>
+                        <p class="features__text">We use innovative tools to solve assigned tasks. It's time to simplify
+                            work processes.</p>
                     </li>
                 </ul>
             </div>
         </section>
         <!--Чем мы занимаемся-->
-        <section class="about">
+        <!-- <section class="about">
             <div class="container">
                 <h2 class="about__title">Чим ми займаємося</h2>
                 <ul class="about__list list">
@@ -102,16 +103,36 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!--Наша Команда-->
         <section class="team">
             <div class="container">
-                <h2 class="team__title">Наша команда</h2>
+                <h2 class="team__title">Our Team</h2>
                 <ul class="card-list list">
                     <li class="card-list__item">
-                        <img src="./images/tm1.jpg" alt="Team Member 1" width="270" height="260">
+                        <picture>
+                            <source srcset="
+                            ./images/tm1.jpg 1x, 
+                            ./images/tm1-2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            />
+                            <source srcset="
+                            ./images/tm1-tab.jpg 1x, 
+                            ./images/tm1-tab-2x.jpg 2x" 
+                            media="(min-width: 768px)"
+                            />
+                            <source srcset="
+                            ./images/tm1-mob.jpg 1x, 
+                            ./images/tm1-mob-2x.jpg 2x" 
+                            media="(min-width: 480px)"
+                            />
+                            <img 
+                            src="./images/tm1-mob.jpg"
+                            alt="Team Member 1"
+                            width="450">
+                        </picture>
                         <div class="card-list__content">
-                            <h3 class="card-list__subtitle">Ігор Дем'яненко</h3>
+                            <h3 class="card-list__subtitle">Christopher Walker</h3>
                             <p lang="en" class="card-list__text">Product Designer</p>
                             <ul class="card-list__soc-list list socials">
                                 <li class="socials__item">
@@ -146,9 +167,29 @@
                         </div>
                     </li>
                     <li class="card-list__item">
-                        <img src="./images/tm2.jpg" alt="Team Member 2" width="270" height="260">
+                        <picture>
+                            <source srcset="
+                            ./images/tm2.jpg 1x, 
+                            ./images/tm2-2x.jpg 2x" 
+                            media="(min-width: 1200px)"
+                            />
+                            <source srcset="
+                            ./images/tm2-tab.jpg 1x, 
+                            ./images/tm2-tab-2x.jpg 2x" 
+                            media="(min-width: 768px)"
+                            />
+                            <source srcset="
+                            ./images/tm2-mob.jpg 1x,
+                            ./images/tm2-mob-2x.jpg 2x" 
+                            media="(min-width: 480px)" 
+                            />
+                            <img 
+                            src="./images/tm2.jpg" 
+                            alt="Team Member 2" 
+                            width="460">
+                        </picture>
                         <div class="card-list__content">
-                            <h3 class="card-list__subtitle">Ольга Рєпіна</h3>
+                            <h3 class="card-list__subtitle">Kylie Evans</h3>
                             <p lang="en" class="card-list__text">Frontend Developer</p>
                             <ul class="card-list__soc-list list socials">
                                 <li class="socials__item">
@@ -183,85 +224,122 @@
                         </div>
                     </li>
                     <li class="card-list__item">
-                        <img src="./images/tm3.jpg" alt="Team Member 3" width="270" height="260">
-                        <div class="card-list__content">
-                            <h3 class="card-list__subtitle">Микола Тарасов</h3>
-                            <p lang="en" class="card-list__text">Marketing</p>
-                            <ul class="card-list__soc-list list socials">
-                                <li class="socials__item">
-                                    <a href="" class="socials__link link">
-                                        <svg class="socials__icon socials__icon--dark" width="20" height="20">
-                                            <use href="./images/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="socials__item">
-                                    <a href="" class="socials__link link">
-                                        <svg class="socials__icon socials__icon--dark" width="20" height="20">
-                                            <use href="./images/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="socials__item">
-                                    <a href="" class="socials__link link">
-                                        <svg class="socials__icon socials__icon--dark" width="20" height="20">
-                                            <use href="./images/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="socials__item">
-                                    <a href="" class="socials__link link">
-                                        <svg class="socials__icon socials__icon--dark" width="20" height="20">
-                                            <use href="./images/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                        <picture>
+                            <source srcset="
+                            ./images/tm3.jpg 1x, 
+                            ./images/tm3-2x.jpg 2x" 
+                            media="(min-width: 1200px)" 
+                            />
+                            <source srcset="./images/tm3-tab.jpg 1x, 
+                            ./images/tm3-tab-2x.jpg 2x" 
+                            media="(min-width: 768px)" 
+                            />
+                            <source srcset="
+                            ./images/tm3-mob.jpg 1x, 
+                            ./images/tm3-mob-2x.jpg 2x" 
+                            media="(min-width: 480px)" 
+                            />
+                            <img 
+                            src="./images/tm3.jpg" 
+                            alt="Team Member 3" 
+                            width="460">
+                            <div class="card-list__content">
+                                <h3 class="card-list__subtitle">Ryan Harris</h3>
+                                <p lang="en" class="card-list__text">Marketing</p>
+                                <ul class="card-list__soc-list list socials">
+                                    <li class="socials__item">
+                                        <a href="" class="socials__link link">
+                                            <svg class="socials__icon socials__icon--dark" width="20" height="20">
+                                                <use href="./images/icons.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a href="" class="socials__link link">
+                                            <svg class="socials__icon socials__icon--dark" width="20" height="20">
+                                                <use href="./images/icons.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a href="" class="socials__link link">
+                                            <svg class="socials__icon socials__icon--dark" width="20" height="20">
+                                                <use href="./images/icons.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a href="" class="socials__link link">
+                                            <svg class="socials__icon socials__icon--dark" width="20" height="20">
+                                                <use href="./images/icons.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                     </li>
                     <li class="card-list__item">
-                        <img src="./images/tm4.jpg" alt="Team Member 4" width="270" height="260">
-                        <div class="card-list__content">
-                            <h3 class="card-list__subtitle">Михайло Єрмаков</h3>
-                            <p lang="en" class="card-list__text">UI Designer</p>
-                            <ul class="card-list__soc-list list socials">
-                                <li class="socials__item">
-                                    <a href="" class="socials__link link">
-                                        <svg class="socials__icon socials__icon--dark" width="20" height="20">
-                                            <use href="./images/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="socials__item">
-                                    <a href="" class="socials__link link">
-                                        <svg class="socials__icon socials__icon--dark" width="20" height="20">
-                                            <use href="./images/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="socials__item">
-                                    <a href="" class="socials__link link">
-                                        <svg class="socials__icon socials__icon--dark" width="20" height="20">
-                                            <use href="./images/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="socials__item">
-                                    <a href="" class="socials__link link">
-                                        <svg class="socials__icon socials__icon--dark" width="20" height="20">
-                                            <use href="./images/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                        <picture>
+                            <source srcset="
+                            ./images/tm4.jpg 1x, 
+                            ./images/tm4-2x.jpg 2x"
+                            media="(min-width: 1200px)" 
+                            />
+                            <source srcset="
+                            ./images/tm4-tab.jpg 1x, 
+                            ./images/tm4-tab-2x.jpg 2x"
+                            media="(min-width: 768px)" 
+                            />
+                            <source srcset="
+                            ./images/tm4-mob.jpg 1x, 
+                            ./images/tm4-mob-2x.jpg 2x"
+                            media="(min-width: 480px)" 
+                            />
+                            <img 
+                            src="./images/tm4.jpg" 
+                            alt="Team Member 4" 
+                            width="460">
+                            <div class="card-list__content">
+                                <h3 class="card-list__subtitle">Tyler Moore</h3>
+                                <p lang="en" class="card-list__text">UI Designer</p>
+                                <ul class="card-list__soc-list list socials">
+                                    <li class="socials__item">
+                                        <a href="" class="socials__link link">
+                                            <svg class="socials__icon socials__icon--dark" width="20" height="20">
+                                                <use href="./images/icons.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a href="" class="socials__link link">
+                                            <svg class="socials__icon socials__icon--dark" width="20" height="20">
+                                                <use href="./images/icons.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a href="" class="socials__link link">
+                                            <svg class="socials__icon socials__icon--dark" width="20" height="20">
+                                                <use href="./images/icons.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a href="" class="socials__link link">
+                                            <svg class="socials__icon socials__icon--dark" width="20" height="20">
+                                                <use href="./images/icons.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="clients">
             <div class="container">
-                <h2 class="clients__title">Постійні клієнти</h2>
+                <h2 class="clients__title">Regular Customers</h2>
                 <ul class="clients__list list">
                     <li class="clients__item">
                         <a href="" class="clients__link link">
@@ -311,7 +389,7 @@
         </section>
     </main>
     <!--Footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer-container">
             <div class="footer-address">
                 <a href="" class="footer-logo logo--light link"><span class="logo-accent">Web</span>Studio</a>
@@ -377,7 +455,7 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>

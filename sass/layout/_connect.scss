@@ -1,0 +1,39 @@
+.connect__list {
+    display: flex;
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.connect__mail,
+.connect__tel {
+    @extend %align-list;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $second-text-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+        color: $first-accent-color;
+    }
+}
+
+.connect__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.connect {
+    margin-left: auto;
+
+    &__mail-icon,
+    &__tel-icon {
+        fill: currentColor;
+        margin-right: 10px;
+    }
+}
