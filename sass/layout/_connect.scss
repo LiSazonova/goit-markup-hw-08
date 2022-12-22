@@ -1,9 +1,9 @@
+.connect {
+    display: none;
+}
+
 .connect__list {
     display: flex;
-
-    @include mobile {
-        display: none;
-    }
 }
 
 .connect__mail,
