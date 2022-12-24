@@ -1,41 +1,38 @@
 .footer {
+    text-align: center;
     background-color: $forth-background-color;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0;
 }
 
 .footer-container {
-    display: flex;
-    align-items: baseline;
+    display: block;
+        margin: 0;
+        padding: 0px;
 }
 
-.footer-logo {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    margin-bottom: 20px;
+.address__list {
+        margin-top: 28px;
+        margin-bottom: 60px;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        font-style: normal;
+        list-style: none;
 }
 
-.footer-address {
-    font-style: normal;
+.address__list li:not(:last-child) {
+    margin-bottom: 12px;
 }
 
-.footer-address__list li:not(:last-child) {
-    margin-bottom: 9px;
-}
-
-.footer-address__link {
+.address__link {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $third-text-color;
 }
 
-.footer-address__mail,
-.footer-address__tel {
+.address__mail,
+.address__tel {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -49,7 +46,7 @@
 }
 
 .footer-soc {
-    margin-left: 70px;
+    text-align: center;
 
     &__title {
         margin-bottom: 20px;
@@ -63,6 +60,8 @@
 
     &__list {
         display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
     }
 }
 
@@ -109,9 +108,10 @@
     }
 }
 
-.form-subscribe {
-    @extend %align-list;
-}
+// .form-subscribe {
+//     // @extend %align-list;
+//     // text-align: center;
+// }
 
 .form-subscribe__input {
     font-size: 16px;
@@ -122,7 +122,7 @@
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    margin-right: 12px;
+    // margin-right: 12px;
     background-color: transparent;
     padding: 0px 0px 0px 16px;
     outline: none;
@@ -142,20 +142,27 @@
 }
 
 .form-subscribe__btn {
+    display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    @extend %align-list;
+    // @extend %align-list;
     text-align: center;
     letter-spacing: 0.06em;
     color: $third-text-color;
+
     width: 200px;
     height: 50px;
     border: none;
     background: $first-accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    padding-left: 29px;
+
+    margin-top: 30px;
+    // padding-left: 29px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
