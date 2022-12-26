@@ -10,6 +10,16 @@
     &:focus {
         fill: $first-accent-color;
     }
+
+        @include tablet {
+            display: none;
+        }
+    
+        @include desktop {
+            display: none;
+        }
+
+
 }
 
 .button .menu-toggle {
@@ -24,8 +34,10 @@
     background-color: $first-background-color;
     width: 100vw;
     height: 100vh;
+    opacity: 0;
     transform: translateY(-100%);
     transition: transform 250ms $timing-function;
+    
 
     .container {
         display: flex;
@@ -44,11 +56,20 @@
     @include tablet {
         display: none;
     }
+
+        @include desktop {
+            display: none;
+        }
 }
 
 .mob-menu.is-open {
+    opacity: 1;
     transform: translateY(0);
-}
+    }
+
+// .mob-menu.is-hidden {
+//     transform: translateY(-100%);
+// }
 
 .mobile-menu__item:not(:last-child) {
     margin-bottom: 32px;

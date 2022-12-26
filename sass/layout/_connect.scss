@@ -1,21 +1,39 @@
 .connect {
-    display: none;
+    @media screen and (max-width:767px) {
+            display: none;
+        }
+    
+    &__mail-icon {
+        fill:currentColor;
+        margin-right: 8px;
+        width: 14px;
+        height: 10px;
+    }
+
+    &__tel-icon {
+        fill: currentColor;
+        margin-right: 8px;
+        width: 10px;
+            height: 14px;
+    }
 }
 
-.connect__list {
-    display: flex;
-}
+// .connect__list {
+//     display: flex;
+// }
 
 .connect__mail,
 .connect__tel {
     @extend %align-list;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+        line-height: 1.16;
+    // font-size: 14px;
+    // line-height: 1.14;
     letter-spacing: 0.02em;
     color: $second-text-color;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
     transition: color 250ms $timing-function;
 
     &:hover,
@@ -25,15 +43,9 @@
 }
 
 .connect__item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 10px;
 }
 
-.connect {
-    margin-left: auto;
-
-    &__mail-icon,
-    &__tel-icon {
-        fill: currentColor;
-        margin-right: 10px;
-    }
-}
+// .connect__item:not(:last-child) {
+//     margin-right: 30px;
+// }
