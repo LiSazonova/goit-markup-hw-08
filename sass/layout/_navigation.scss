@@ -1,7 +1,4 @@
-.nav {
-    @include tablet {
-        margin-right: 114px;
-    }  
+.nav { 
     @media screen and (max-width:767px) {
         display: none;        
     }

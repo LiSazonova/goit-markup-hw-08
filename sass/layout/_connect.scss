@@ -1,22 +1,32 @@
-.connect {
+.connect__list {
+    
+    margin-left: auto;
+
     @media screen and (max-width:767px) {
             display: none;
         }
-    
-    &__mail-icon {
+
+    @include desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }    
+}
+        
+.connect__mail-icon {
         fill:currentColor;
         margin-right: 8px;
         width: 14px;
         height: 10px;
     }
 
-    &__tel-icon {
+.connect__tel-icon {
         fill: currentColor;
         margin-right: 8px;
         width: 10px;
             height: 14px;
     }
-}
+
 
 // .connect__list {
 //     display: flex;
