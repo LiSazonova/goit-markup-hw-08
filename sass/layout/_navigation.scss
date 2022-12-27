@@ -1,6 +1,6 @@
-.nav { 
+.nav {
     @media screen and (max-width:767px) {
-        display: none;        
+        display: none;
     }
 
     &__list {
@@ -14,59 +14,30 @@
     }
 
     &__link {
-                position: relative;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 1.14;
-                letter-spacing: 0.02em;
-                color: $first-text-color;
-                padding-top: 32px;
-                padding-bottom: 32px;
-                transition: color 250ms $timing-function;
-    
-                &:hover,
-                &:focus {
-                    color: $first-accent-color;
-                }
+        position: relative;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: $first-text-color;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        transition: color 250ms $timing-function;
 
-                &.current::after {
-                        content: '';
-                        position: absolute;
-                        width: 100%;
-                        height: 4px;
-                        background-color: $first-accent-color;
-                        border-radius: 2px;
-                        left: 0;
-                        bottom: -1px;
-                    }
-            }
+        &:hover,
+        &:focus {
+            color: $first-accent-color;
+        }
+
+        &.current::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color: $first-accent-color;
+            border-radius: 2px;
+            left: 0;
+            bottom: -1px;
+        }
+    }
 }
-
-
-// .nav__link {
-//     position: relative;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-//     color: $first-text-color;
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-//     transition: color 250ms $timing-function;
-
-//     &:hover,
-//     &:focus {
-//         color: $first-accent-color;
-//     }
-// }
-
-// .nav__link.current::after {
-//     content: '';
-//     position: absolute;
-//     width: 100%;
-//     height: 4px;
-//     background-color: $first-accent-color;
-//     border-radius: 2px;
-//     left: 0;
-//     bottom: -1px;
-// }

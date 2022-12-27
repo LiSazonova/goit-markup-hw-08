@@ -1,16 +1,37 @@
 .work {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 60px 0;
+
+    @include desktop {
+        padding: 94px 0;
+    }
 }
 
 .filters-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px 8px;
+    width: 80%;
+
+    @include tablet {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
 }
 
 .filters-list__item:not(:last-child) {
-    margin-right: 8px;
+    @include desktop {
+        margin-right: 8px;
+    }
 }
 
 .filters-list__btn {
@@ -42,19 +63,29 @@
 .grid {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-    padding: 0;
-
+    gap: 30px;
+    
     &__item {
-        margin-left: 30px;
-        margin-top: 30px;
-        flex-basis: calc((100% - 3*30px) / 3);
+        width: 100%;
         background-color: #fff;
+
+        @include tablet {
+            width: 354px;
+        }
+
+        @include desktop {
+            width: calc((100% - 60px) / 3);
+        }
+        
     }
 }
 
 .grid__link {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
     transition: box-shadow 250ms $timing-function;
 
     &:hover,
@@ -69,6 +100,8 @@
     border: 1px solid #EEEEEE;
     border-top: none;
     padding: 20px 24px;
+
+    flex-grow: 1;
 
     &__title {
         font-weight: 700;

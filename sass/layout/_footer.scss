@@ -24,7 +24,7 @@
 
 .address {
     @include desktop {
-    margin-right: 94px;
+        margin-right: 94px;
     }
 }
 
@@ -161,7 +161,7 @@
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
-        
+
         background-color: transparent;
         padding: 0px 0px 0px 16px;
         outline: none;
@@ -192,7 +192,7 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
-        
+
         text-align: center;
         letter-spacing: 0.06em;
         color: $third-text-color;
@@ -210,8 +210,8 @@
         &:hover,
         &:focus {
             background-color: $second-accent-color;
-        }    
-        
+        }
+
         @include desktop {
             margin-top: 0;
         }

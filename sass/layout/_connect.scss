@@ -1,61 +1,82 @@
 .connect__list {
-    
     margin-left: auto;
 
-    @media screen and (max-width:767px) {
-            display: none;
-        }
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 
     @include desktop {
         display: flex;
-        align-items: center;
-        justify-content: center;
-    }    
-}
-        
-.connect__mail-icon {
-        fill:currentColor;
-        margin-right: 8px;
-        width: 14px;
-        height: 10px;
-    }
-
-.connect__tel-icon {
-        fill: currentColor;
-        margin-right: 8px;
-        width: 10px;
-            height: 14px;
-    }
-
-
-// .connect__list {
-//     display: flex;
-// }
-
-.connect__mail,
-.connect__tel {
-    @extend %align-list;
-    font-weight: 500;
-    font-size: 12px;
-        line-height: 1.16;
-    // font-size: 14px;
-    // line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $second-text-color;
-    // padding-top: 32px;
-    // padding-bottom: 32px;
-    transition: color 250ms $timing-function;
-
-    &:hover,
-    &:focus {
-        color: $first-accent-color;
+            align-items: center;
+            justify-content: center;
     }
 }
 
 .connect__item:not(:last-child) {
     margin-bottom: 10px;
+
+    @include desktop {
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
 }
 
-// .connect__item:not(:last-child) {
-//     margin-right: 30px;
-// }
+.connect__link { 
+    @extend %align-list;
+
+    color: $second-text-color;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms $timing-function;
+
+    
+    &:hover,
+    &:focus {
+        color: $first-accent-color;
+    }
+
+    @include desktop {
+        display: flex;
+            align-items: center;
+            justify-content: center;
+
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+
+.connect__mail-icon {
+    margin-right: 8px;
+
+    width: 14px;
+    height: 10px;
+
+    fill: currentColor;
+
+    @include desktop {
+        margin-right: 10px;
+
+        width: 16px;
+        height: 12px;
+    }
+}
+
+.connect__tel-icon {
+    margin-right: 8px;
+    
+        width: 10px;
+        height: 14px;
+    
+        fill: currentColor;
+    
+        @include desktop {
+            margin-right: 10px;
+    
+            width: 12px;
+            height: 16px;
+        }
+}
