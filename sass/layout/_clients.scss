@@ -1,6 +1,5 @@
 .clients {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0;
 
     @include desktop {
         padding-top: 94px;
@@ -27,37 +26,35 @@
         flex-wrap: wrap;
         gap: 30px;
     }
-}
 
-.clients__item {
-    width: calc((100% - 30px) / 2);
+    &__item {
+        width: calc((100% - 30px) / 2);
 
-    @include tablet {
-        width: calc((100% - 60px) / 3);
+        @include tablet {
+            width: calc((100% - 60px) / 3);
+        }
+
+        @include desktop {
+            width: calc((100% - 150px) / 6);
+        }
     }
 
-    @include desktop {
-        width: calc((100% - 150px) / 6);
+    &__link {
+        outline: transparent;
+
+        &:hover .clients__icon,
+        &:focus .clients__icon {
+            fill: $first-accent-color;
+            border: 1px solid $first-accent-color;
+            border-radius: 4px;
+        }
     }
 
-
-}
-
-.clients__link {
-    outline: transparent;
-
-    &:hover .clients__icon,
-    &:focus .clients__icon {
-        fill: $first-accent-color;
-        border: 1px solid $first-accent-color;
+    &__icon {
+        width: 100%;
+        fill: $icon-color;
+        border: 1px solid #AFB1B8;
         border-radius: 4px;
+        transition: fill 250ms $timing-function;
     }
-}
-
-.clients__icon {
-    width: 100%;
-    fill: $icon-color;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    transition: fill 250ms $timing-function;
 }
