@@ -18,18 +18,21 @@
     @include desktop {
         gap: 0;
         text-align: left;
+        justify-content: space-between;
     }
 }
 
 .address {
+    margin-bottom: 60px;
+
     @include desktop {
-        margin-right: 94px;
+        margin-bottom: 0;
     }
 }
 
 .address__list {
     margin-top: 28px;
-    margin-bottom: 60px;
+
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -71,7 +74,6 @@
 
     @include desktop {
         text-align: left;
-        margin-right: 93px;
     }
 
     &__title {
@@ -87,7 +89,10 @@
     &__list {
         display: flex;
         justify-content: center;
-        margin-bottom: 60px;
+
+        @include desktop {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -121,6 +126,7 @@
 }
 
 .footer-form {
+
     margin-top: 60px;
 
     &__title {
@@ -131,6 +137,11 @@
         text-transform: uppercase;
         color: $third-text-color;
         margin-bottom: 20px;
+    }
+
+    @include tablet {
+        justify-content: center;
+        margin-top: 0;
     }
 
     @include desktop {
@@ -178,8 +189,13 @@
             color: rgba(255, 255, 255, 0.6);
         }
 
+        @include tablet {
+            width: 450px;
+        }
+
         @include desktop {
             margin-right: 12px;
+            width: 358px;
         }
     }
 
