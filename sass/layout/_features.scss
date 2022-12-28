@@ -20,6 +20,10 @@
         color: $first-text-color;
         margin-bottom: 10px;
         text-align: center;
+
+        @include tablet {
+            text-align: left;
+        }
     }
 
     &__text {
